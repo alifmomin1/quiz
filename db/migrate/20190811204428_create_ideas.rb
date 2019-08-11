@@ -1,11 +1,9 @@
-class CreateLyrics < ActiveRecord::Migration[5.2]
+class CreateIdeas < ActiveRecord::Migration[5.2]
   def change
-    create_table :lyrics do |t|
+    create_table :ideas do |t|
       t.string :name
       t.text :description
       t.timestamps
     end
   end
 end
-
-
