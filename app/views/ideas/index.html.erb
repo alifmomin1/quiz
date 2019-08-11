@@ -1,1 +1,8 @@
-<h1>Welcome to Planet Vegeta</h1>
+<% @lyrics.each do |lyric| %>
+  <div>
+    <h1><%= lyric.name %></h1><br />
+    <p><%= lyric.description %></p><br />
+  </div>
+
+  <hr />
+<% end %>
